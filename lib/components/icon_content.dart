@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
+import '../constants.dart';
 
-const labelTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
 
 //contains the content inside each reusableCard
 class IconContent extends StatelessWidget {
-  //Constructure for the widget
+  //Constructor for the widget
   IconContent({this.icon, this.label});
 
   //properties for the contents of widgets
@@ -28,7 +25,7 @@ class IconContent extends StatelessWidget {
         ),
         Text(
           label,
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         ),
       ],
     );
